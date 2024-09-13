@@ -21,7 +21,7 @@ import Contact from "./pages/Contact";
 // Scroll callback function
 const scrollTo = () => {
   scroller.scrollTo("about", {
-    duration: 1500,
+    duration: 1000,
     delay: 0,
     smooth: true,
   });
@@ -617,7 +617,7 @@ function Home() {
           <Element name="projects">
             <section
               className="h-full flex flex-col items-center"
-              style={{ height: "100vh", backgroundColor: "white" }}
+              style={{ height: "auto", backgroundColor: "white" }}
             >
               <Projects />
             </section>
@@ -626,7 +626,7 @@ function Home() {
           <Element name="contact">
             <section
               className="h-full"
-              style={{ height: "100vh", backgroundColor: "white" }}
+              style={{ height: "auto", backgroundColor: "white" }}
             >
               <Contact />
             </section>
