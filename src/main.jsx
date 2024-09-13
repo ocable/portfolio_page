@@ -6,6 +6,7 @@ import Root from "./layout/Root.jsx";
 import Home from "./Home.jsx";
 import Project_List from "./pages/Project_list.jsx";
 import "./index.css";
+import Resume from "./pages/Resume.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/projects", element: <Project_List /> },
+      { path: "/resume", element: <Resume /> },
     ],
   },
 ]);

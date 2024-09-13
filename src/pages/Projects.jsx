@@ -7,9 +7,10 @@ import keyboard from "../assets/keyboard.jpg";
 export default function Projects() {
   return (
     <>
-      <h1 className="text-5xl font-bold mt-30 mb-20">Projects</h1>
+      <h1 className="text-5xl font-bold mt-40 mb-20">Projects</h1>
 
-      <div className="container mx-auto grid grid-cols-2 grid-flow-rows items-center">
+      {/* CPSC DATABASE */}
+      <div className="container mx-auto grid grid-cols-2 grid-flow-rows items-center mb-40">
         <div className="group/card hover:bg-blue-100 p-4 rounded-2xl flex flex-row items-start mx-12 my-10">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
@@ -30,7 +31,7 @@ export default function Projects() {
                 Prisma
               </h3>
             </div>
-            <section className="group/link flex flex-row">
+            <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
                 <a href="">View on GitHub</a>
               </h4>
@@ -50,6 +51,7 @@ export default function Projects() {
           </section>
         </div>
 
+        {/* NBDC VISUALIZER */}
         <div className="group/card hover:bg-blue-100 p-4 rounded-2xl flex flex-row items-start mx-12 my-10">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
@@ -65,9 +67,9 @@ export default function Projects() {
                 Python
               </h3>
             </div>
-            <section className="group/link flex flex-row">
+            <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="">View on GitHub</a>
+                <a href="https://github.com/ocable/wave_math">View on GitHub</a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -108,9 +110,9 @@ export default function Projects() {
                 Socket.IO
               </h3>
             </div>
-            <section className="group/link flex flex-row">
+            <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="">View on GitHub</a>
+                <a href="https://github.com/ocable/ESP32-IOT">View on GitHub</a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -145,9 +147,11 @@ export default function Projects() {
                 Arduino
               </h3>
             </div>
-            <section className="group/link flex flex-row">
+            <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="">View on GitHub</a>
+                <a href="https://github.com/ocable/fingerprint-doorlock">
+                  View on GitHub
+                </a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -182,9 +186,11 @@ export default function Projects() {
                 Arduino
               </h3>
             </div>
-            <section className="group/link flex flex-row">
+            <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="">View on GitHub</a>
+                <a href="https://github.com/ocable/micro_sped/tree/upload">
+                  View on GitHub
+                </a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -222,9 +228,11 @@ export default function Projects() {
                 QMK
               </h3>
             </div>
-            <section className="group/link flex flex-row">
+            <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="">View on GitHub</a>
+                <a href="https://github.com/ocable/Sofle-Choc">
+                  View on GitHub
+                </a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
