@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg fill="#000000"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="800px"
-	 height="800px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-
-<g id="5151e0c8492e5103c096af88a51e75c7">
-
-<path display="inline" fill-rule="evenodd" clip-rule="evenodd" d="M1.008,0.5C0.438,0.583,0.48,1.27,0.521,1.958
+export default function JsSvg() {
+  return (
+    <svg
+      fill="#000000"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="800px"
+      height="800px"
+      viewBox="0 0 512 512"
+      enable-background="new 0 0 512 512"
+      xml:space="preserve"
+	  className="w-12 h-min"
+    >
+      <g id="5151e0c8492e5103c096af88a51e75c7">
+        <path
+          display="inline"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1.008,0.5C0.438,0.583,0.48,1.27,0.521,1.958
 		c0,169.668,0,339.31,0,508.974c169.364,1.135,340.808,0.162,510.979,0.486c0-170.309,0-340.61,0-510.918
 		C341.342,0.5,171.167,0.5,1.008,0.5z M259.893,452.167c-11.822,11.919-30.478,18.938-53.429,18.938
 		c-37.643,0-58.543-18.34-71.884-43.711c12.842-8.2,25.966-16.122,39.344-23.795c5.456,15.262,23.886,32.42,44.683,21.857
@@ -17,10 +28,9 @@
 		c-35.352-15.424-76.828-29.571-72.861-84.992c1.327-18.514,9.852-31.525,20.889-40.796c11.311-9.5,26.46-15.867,46.629-16.511
 		c36.629-1.173,56.723,15.12,70.429,37.884c-11.664,8.891-24.514,16.608-37.401,24.281c-4.229-12.995-24.644-25.658-41.772-17.969
 		c-7.789,3.493-14.788,13.761-10.684,26.224c3.66,11.115,18.589,17.199,30.599,22.344
-		C433.706,340.486,474.331,355.693,470.696,409.917z">
-
-</path>
-
-</g>
-
-</svg>
+		C433.706,340.486,474.331,355.693,470.696,409.917z"
+        ></path>
+      </g>
+    </svg>
+  );
+}
