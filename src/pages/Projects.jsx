@@ -33,7 +33,9 @@ export default function Projects() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="">View on GitHub</a>
+                <a href="" target="_blank">
+                  View on GitHub
+                </a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +71,9 @@ export default function Projects() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="https://github.com/ocable/wave_math">View on GitHub</a>
+                <a href="https://github.com/ocable/wave_math" target="_blank">
+                  View on GitHub
+                </a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +116,9 @@ export default function Projects() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="https://github.com/ocable/ESP32-IOT">View on GitHub</a>
+                <a href="https://github.com/ocable/ESP32-IOT" target="_blank">
+                  View on GitHub
+                </a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +155,10 @@ export default function Projects() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="https://github.com/ocable/fingerprint-doorlock">
+                <a
+                  href="https://github.com/ocable/fingerprint-doorlock"
+                  target="_blank"
+                >
                   View on GitHub
                 </a>
               </h4>
@@ -188,7 +197,10 @@ export default function Projects() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="https://github.com/ocable/micro_sped/tree/upload">
+                <a
+                  href="https://github.com/ocable/micro_sped/tree/upload"
+                  target="_blank"
+                >
                   View on GitHub
                 </a>
               </h4>
@@ -230,7 +242,7 @@ export default function Projects() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="https://github.com/ocable/Sofle-Choc">
+                <a href="https://github.com/ocable/Sofle-Choc" target="_blank">
                   View on GitHub
                 </a>
               </h4>
