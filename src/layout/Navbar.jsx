@@ -7,14 +7,15 @@ import { Link, Element } from "react-scroll";
 
 function Navbar() {
   return (
-    <div className="navbar bg-base-100 sticky top-0">
+   
+    <div className="flex flex-row justify-between navbar bg-base-100 sticky top-0">
       <div className="navbar-start">
-        <a className="text-xl pl-12 font-bold">Orion Cable</a>
+        <a className="text-sm text-nowrap md:text-xl md:ml-12 font-bold">Orion Cable</a>
       </div>
 
-      <div className="navbar-center hidden lg:flex"></div>
+      <div className="flex flex-row sm:hidden"></div>
 
-      <div className="navbar-end">
+      {/* <div className="navbar-end">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -53,9 +54,9 @@ function Navbar() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
-      <ul className="menu menu-horizontal flex-nowrap px-1 pr-5 xs:hidden">
+      <ul className="menu menu-horizontal flex-nowrap px-1 invisible md:visible md:mr-8">
         <li>
           <Link to="landing" smooth={true} duration={1000}>
             Home
