@@ -607,6 +607,7 @@ function Home() {
         </div>
 
         <Navbar />
+        
 
         <section>
           <Element name="about">
