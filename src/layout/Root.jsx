@@ -1,12 +1,13 @@
+import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Background from "./Background";
 
 export default function Root() {
+
   return (
     <>
-      {/* <Navbar /> */}
-      <main className="overflow-x-hidden">
+      <main className="w-full"> 
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
