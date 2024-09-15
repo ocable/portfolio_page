@@ -6,7 +6,7 @@ export default function NodeSvg() {
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-12 h-min"
+      className="w-8 h-min md:w-12 md:h-12 mx-4"
     >
       <path
         fill-rule="nonzero"

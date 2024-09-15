@@ -7,11 +7,12 @@ import keyboard from "../assets/keyboard.jpg";
 export default function Projects() {
   return (
     <>
-      <h1 className="text-5xl font-bold mt-40 mb-20">Projects</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mt-20 md:mt-40 mb-8 md:mb-20">Projects</h1>
 
       {/* CPSC DATABASE */}
-      <div className="container mx-auto grid grid-cols-2 grid-flow-rows items-center mb-40">
-        <div className="group/card hover:bg-blue-100 p-4 rounded-2xl flex flex-row items-start mx-12 my-10">
+      <div className="container mx-auto flex flex-col md:grid-cols-2 md:grid-flow-rows md:items-center mb-20 md:mb-40">
+
+        <div className="group/card hover:bg-blue-100 mx-10 md:mx-12 md:p-4 rounded-2xl flex flex-row items-start my-10">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               CPSC database
@@ -33,7 +34,7 @@ export default function Projects() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="" target="_blank">
+                <a href="https://github.com/ocable/product_safety" target="_blank">
                   View on GitHub
                 </a>
               </h4>
@@ -54,7 +55,7 @@ export default function Projects() {
         </div>
 
         {/* NBDC VISUALIZER */}
-        <div className="group/card hover:bg-blue-100 p-4 rounded-2xl flex flex-row items-start mx-12 my-10">
+        <div className="group/card hover:bg-blue-100 mx-10 md:mx-12 md:p-4 rounded-2xl flex flex-row items-start my-10">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               Buoy Data Visualizer
@@ -91,7 +92,7 @@ export default function Projects() {
           </section>
         </div>
 
-        <div className="group/card hover:bg-blue-100 p-4 rounded-2xl flex flex-row items-start mx-12 my-10">
+        <div className="group/card hover:bg-blue-100 mx-10 md:mx-12 md:p-4 rounded-2xl flex flex-row items-start my-10">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               ESP32 IOT
@@ -136,7 +137,7 @@ export default function Projects() {
           </section>
         </div>
 
-        <div className="group/card hover:bg-blue-100 p-4 rounded-2xl flex flex-row items-start mx-12 my-10">
+        <div className="group/card hover:bg-blue-100 flex flex-row items-start my-10 mx-10 md:mx-12 md:p-4 rounded-2xl">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               Fingerprint Doorlock
@@ -178,7 +179,7 @@ export default function Projects() {
           </section>
         </div>
 
-        <div className="group/card hover:bg-blue-100 p-4 rounded-2xl flex flex-row items-start mx-12 my-10">
+        <div className="group/card hover:bg-blue-100 rounded-2xl flex flex-row items-start my-10 mx-10 md:mx-12 md:p-4">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               Moped Speedometer
@@ -220,7 +221,7 @@ export default function Projects() {
           </section>
         </div>
 
-        <div className="group/card hover:bg-blue-100 p-4 rounded-2xl flex flex-row items-start mx-12 my-10">
+        <div className="group/card hover:bg-blue-100 rounded-2xl flex flex-row items-start my-10 mx-10 md:mx-12 md:p-4">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               Sofle Choc{" "}
