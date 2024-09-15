@@ -7,10 +7,10 @@ import keyboard from "../assets/keyboard.jpg";
 export default function Projects() {
   return (
     <>
-      <h1 className="text-4xl md:text-5xl font-bold mt-20 md:mt-40 mb-8 md:mb-20">Projects</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mt-20 md:mt-40 mb-8 md:mb-10">Projects</h1>
 
       {/* CPSC DATABASE */}
-      <div className="container mx-auto flex flex-col md:grid-cols-2 md:grid-flow-rows md:items-center mb-20 md:mb-40">
+      <div className="container mx-auto flex flex-col md:grid md:grid-cols-2 md:grid-flow-rows md:items-center mb-20 md:mb-40">
 
         <div className="group/card hover:bg-blue-100 mx-10 md:mx-12 md:p-4 rounded-2xl flex flex-row items-start my-10">
           <section className=" flex flex-col">
@@ -137,14 +137,14 @@ export default function Projects() {
           </section>
         </div>
 
-        <div className="group/card hover:bg-blue-100 flex flex-row items-start my-10 mx-10 md:mx-12 md:p-4 rounded-2xl">
+        <div className="group/card hover:bg-blue-100 mx-10 md:mx-12 md:p-4 rounded-2xl flex flex-row items-start my-10">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               Fingerprint Doorlock
             </h2>
             <p className="my-2">
               Biometric doorlock using arduino and fingerprint scanner from
-              adafruit.
+              adafruit. Stores fingerprints in EEPROM and unlocks door with servo.
             </p>
             <div className="flex flex-row">
               <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">

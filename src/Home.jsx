@@ -581,16 +581,17 @@ function Home() {
                 I like to [code, make] things
               </h2>
               <button
-                className="flex items-center btn btn-outline btn-md w-1/2 md:w-1/3 font-bold text-lg m-4 md:text-xl md:btn-large"
+                className="flex items-center btn btn-outline btn-md w-1/2 md:w-1/4 font-bold text-lg m-4 md:text-xl md:btn-large"
                 onClick={scrollTo}
               >
                 view my work
                 <svg
                   width="15%"
-                  height="100%"
+                  height="60%"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className="p-0 m-0"
                 >
                   <path
                     d="M12 4V20M12 20L18 14M12 20L6 14"

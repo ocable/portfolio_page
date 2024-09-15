@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col items-center mb-80">
-      <h1 className="text-4xl md:text-5xl font-bold mt-10 md:mt-40">Contact</h1>
+    <div className="flex flex-col items-center mb-96">
+      <h1 className="text-4xl md:text-5xl font-bold mt-10 md:mt-10">Contact</h1>
 
       <section className="flex flex-row mt-12 md:mt-32">
         <a href="mailto:orionfcable@gmail.com">

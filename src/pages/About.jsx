@@ -19,7 +19,7 @@ export default function About() {
           I am a software engineer with a curiousity for how things work. After
           graduating from Full Stack Academy, I've become skilled in
           technologies like JavaScript, React, Redux, Node.js, Express, and
-          PostgreSQL. When I'm not at my computer, you can find me plying
+          PostgreSQL. When I'm not at my computer, you can find me playing
           Ultimate frisbee, mountain biking, skiing, or exploring the outdoors.
         </p>
       </div>
