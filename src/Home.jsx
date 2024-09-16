@@ -581,7 +581,7 @@ function Home() {
                 I like to [code, make] things
               </h2>
               <button
-                className="flex items-center btn btn-outline btn-md w-1/2 md:w-1/4 font-bold text-lg m-4 md:text-xl md:btn-large"
+                className="flex items-center md:hover:bg-blue-100 hover:text-blue-500 btn btn-outline btn-md w-1/2 md:w-auto font-bold text-lg m-4 md:text-xl md:btn-large"
                 onClick={scrollTo}
               >
                 view my work

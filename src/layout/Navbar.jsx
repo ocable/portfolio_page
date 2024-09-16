@@ -16,23 +16,23 @@ function Navbar() {
       <div className="flex flex-row sm:hidden"></div>
 
       <ul className="menu menu-horizontal flex-nowrap px-1 invisible md:visible md:mr-8">
-        <li>
-          <Link to="landing" smooth={true} duration={1000}>
+        <li >
+          <Link to="landing" smooth={true} duration={1000} className="md:hover:bg-blue-100">
             Home
           </Link>
         </li>{" "}
         <li>
-          <Link to="about" smooth={true} duration={1000}>
+          <Link to="about" smooth={true} duration={1000} className="md:hover:bg-blue-100">
             About
           </Link>
         </li>
         <li>
-          <Link to="projects" smooth={true} duration={1000}>
+          <Link to="projects" smooth={true} duration={1000} className="md:hover:bg-blue-100">
             Projects
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={1000}>
+          <Link to="contact" smooth={true} duration={1000} className="md:hover:bg-blue-100">
             Contact
           </Link>
         </li>

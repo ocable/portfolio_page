@@ -4,6 +4,10 @@ export default {
   // darkMode: 'selector',
   theme: {
     extend: {},
+    fontFamily: {
+      roboto: ["Roboto", "sans-serif"],
+      mukta: ["Mukta", "sans-serif"],
+    },
   },
   plugins: [
     require("daisyui"),
