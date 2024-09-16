@@ -7,20 +7,21 @@ import keyboard from "../assets/keyboard.jpg";
 export default function Projects() {
   return (
     <>
-      <h1 className="text-4xl md:text-5xl font-bold mt-20 md:mt-30 mb-8 md:mb-10">Projects</h1>
+      <h1 className="text-4xl md:text-5xl font-roboto font-bold mt-10 md:mt-40 mb-8 md:mb-10">
+        Projects
+      </h1>
 
       {/* CPSC DATABASE */}
-      <div className="container mx-auto flex flex-col md:grid md:grid-cols-2 md:grid-flow-rows md:items-center mb-20 md:mb-40">
-
+      <div className="container mx-auto flex flex-col md:grid md:grid-cols-2 md:grid-flow-rows md:items-start mb-20 md:mb-40">
         <div className="group/card md:hover:bg-blue-100 mx-10 md:mx-4 md:p-4 rounded-2xl flex flex-row items-start my-10 w-auto">
-
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               CPSC database
             </h2>
             <p className="my-2">
               Fullstack web app allowing users to search through a database of
-              product recalls and consumer incident reports via UPC.
+              product recalls and consumer incident reports via text or UPC. In
+              addtion users can register an account and create incident reports.
             </p>
             <div className="flex flex-row">
               <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
@@ -35,7 +36,10 @@ export default function Projects() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="https://github.com/ocable/product_safety" target="_blank">
+                <a
+                  href="https://github.com/ocable/product_safety"
+                  target="_blank"
+                >
                   View on GitHub
                 </a>
               </h4>
@@ -62,9 +66,9 @@ export default function Projects() {
               Buoy Data Visualizer
             </h2>
             <p className="my-2">
-              A web app that visualizes raw spectral buoy data from the NBDC and
-              calculates significant wave height and period for each swell
-              component.
+              A Python program that visualizes raw spectral buoy data from the
+              NBDC. Plots and uses PSD data to calculate significant wave height
+              and period. A breakdown of each swell component is also provided.
             </p>
             <div className="flex flex-row">
               <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
@@ -99,8 +103,9 @@ export default function Projects() {
               ESP32 IOT
             </h2>
             <p className="my-2">
-              Fullstack app template that connects to ESP32 microcontroller via
-              a websocket for low latency control.
+              Fullstack app template using a React frontend and Express server
+              using Socket.IO. ESP32 controller connects to web app via wifi
+              allowing for control from any network.
             </p>
             <div className="flex flex-row">
               <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
@@ -145,7 +150,8 @@ export default function Projects() {
             </h2>
             <p className="my-2">
               Biometric doorlock using arduino and fingerprint scanner from
-              adafruit. Stores fingerprints in EEPROM and unlocks door with servo.
+              adafruit. Stores fingerprints in EEPROM and unlocks deadbolt with
+              servo.
             </p>
             <div className="flex flex-row">
               <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
@@ -188,6 +194,7 @@ export default function Projects() {
             <p className="my-2">
               A retrofit speedometer for a moped using an arduino micro and hall
               effect sensor to track trip distance and monitor gas consumption.
+              Tracks speed, trip distance and average gas consumption.
             </p>
             <div className="flex flex-row">
               <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
@@ -228,8 +235,8 @@ export default function Projects() {
               Sofle Choc{" "}
             </h2>
             <p className="my-2">
-              Split keyboard soldered and built from scratch powered by an
-              Arduino micro and QMK firmware.
+              Split keyboard soldered and 3d printed from scratch. Powered by an
+              Arduino micro and flashed with QMK Firmware.
             </p>
             <div className="flex flex-row">
               <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
