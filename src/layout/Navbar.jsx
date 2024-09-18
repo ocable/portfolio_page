@@ -10,7 +10,7 @@ function Navbar() {
    
     <div className="flex flex-row justify-between navbar bg-base-100 sticky top-0">
       <div className="navbar-start">
-        <a className="text-sm text-nowrap md:text-2xl md:ml-12 font-bold">Orion Cable</a>
+        <a className="text-sm text-nowrap md:text-4xl md:ml-12 font-bold">Orion Cable</a>
       </div>
 
       <div className="flex flex-row sm:hidden"></div>
