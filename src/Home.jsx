@@ -576,7 +576,7 @@ function Home() {
               className="flex flex-col justify-center items-center h-full"
               style={{ height: "100vh", backgroundColor: "white" }}
             >
-              <h1 className="text-3xl font-bold md:text-5xl m-4">Hi I'm Orion</h1>
+              <h1 className="text-3xl font-bold md:text-5xl m-4">Hi, I'm Orion</h1>
               <h2 className="text-xl font-bold m-4 md:text-3xl">
                 I like to [code, make] things
               </h2>
