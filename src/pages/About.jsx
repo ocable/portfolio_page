@@ -27,14 +27,14 @@ export default function About() {
         </p>
       </div>
 
-      {/* <section className="flex flex-row justify-center items-center h-auto">
+      <section className="flex flex-row justify-center items-center h-auto">
         <JsSvg />
         <ReactSvg />
         <NodeSvg />
         <PythonSvg />
         <CPlusPlusSvg />
         <PostgresSvg />
-      </section> */}
+      </section>
     </div>
   );
 }
