@@ -7,22 +7,15 @@ export default function PythonSvg() {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
-	  className="w-8 h-min md:w-12 md:h-12 mx-4"
+      className="w-8 h-min md:w-12 md:h-12 mx-4 dark:fill-white"
     >
       <title>python [#127]</title>
       <desc>Created with Sketch.</desc>
       <defs></defs>
-      <g
-        id="Page-1"
-        stroke="none"
-        stroke-width="1"
-        fill="none"
-        fill-rule="evenodd"
-      >
+      <g id="Page-1" stroke="none" stroke-width="1">
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-340.000000, -7599.000000)"
-          fill="#000000"
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path

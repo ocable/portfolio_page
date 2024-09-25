@@ -13,7 +13,7 @@ export default function Projects() {
 
       {/* CPSC DATABASE */}
       <div className="container mx-auto flex flex-col md:grid md:grid-cols-2 md:grid-flow-rows md:items-start mb-20 md:mb-40">
-        <div className="group/card md:hover:bg-blue-100 mx-10 md:mx-4 md:p-4 rounded-2xl flex flex-row items-start my-10 w-auto">
+        <div className="group/card dark:md:hover:bg-gray-700 md:hover:bg-blue-100 mx-10 md:mx-4 md:p-4 rounded-2xl flex flex-row items-start my-10 w-auto">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               CPSC database
@@ -24,13 +24,13 @@ export default function Projects() {
               addtion users can register an account and create incident reports.
             </p>
             <div className="flex flex-row">
-              <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
                 React
               </h3>
-              <h3 className="max-w-min font-bold bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
                 PostrgreSQL
               </h3>
-              <h3 className="max-w-min font-bold bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
                 Prisma
               </h3>
             </div>
@@ -47,7 +47,7 @@ export default function Projects() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 aria-hidden="true"
-                className="w-5 h-5 ml-0.5 mb-0.5 self-end group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:fill-blue-500"
+                className="w-5 h-5 ml-0.5 mb-0.5 self-end group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:fill-blue-500 dark:fill-white"
               >
                 <path
                   fill-rule="evenodd"
@@ -60,7 +60,7 @@ export default function Projects() {
         </div>
 
         {/* NBDC VISUALIZER */}
-        <div className="group/card md:hover:bg-blue-100 mx-10 md:mx-4 md:p-4 rounded-2xl flex flex-row items-start my-10">
+        <div className="group/card dark:md:hover:bg-gray-700 md:hover:bg-blue-100 mx-10 md:mx-4 md:p-4 rounded-2xl flex flex-row items-start my-10">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               Buoy Data Visualizer
@@ -71,7 +71,7 @@ export default function Projects() {
               and period. A breakdown of each swell component is also provided.
             </p>
             <div className="flex flex-row">
-              <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
                 Python
               </h3>
             </div>
@@ -85,7 +85,7 @@ export default function Projects() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 aria-hidden="true"
-                className="w-5 h-5 ml-0.5 mb-0.5 self-end group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:fill-blue-500"
+                className="w-5 h-5 ml-0.5 mb-0.5 self-end group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:fill-blue-500 dark:fill-white"
               >
                 <path
                   fill-rule="evenodd"
@@ -97,7 +97,7 @@ export default function Projects() {
           </section>
         </div>
 
-        <div className="group/card md:hover:bg-blue-100 mx-10 md:mx-4 md:p-4 rounded-2xl flex flex-row items-start my-10">
+        <div className="group/card dark:md:hover:bg-gray-700 md:hover:bg-blue-100 mx-10 md:mx-4 md:p-4 rounded-2xl flex flex-row items-start my-10">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               ESP32 IOT
@@ -108,16 +108,16 @@ export default function Projects() {
               allowing for control from any network.
             </p>
             <div className="flex flex-row">
-              <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
                 React
               </h3>
-              <h3 className="max-w-min font-bold bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
                 Express
               </h3>
-              <h3 className="max-w-min font-bold bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
                 C++
               </h3>
-              <h3 className="max-w-min font-bold bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
                 Socket.IO
               </h3>
             </div>
@@ -131,7 +131,7 @@ export default function Projects() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 aria-hidden="true"
-                className="w-5 h-5 ml-0.5 mb-0.5 self-end group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:fill-blue-500"
+                className="w-5 h-5 ml-0.5 mb-0.5 self-end group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:fill-blue-500 dark:fill-white"
               >
                 <path
                   fill-rule="evenodd"
@@ -143,7 +143,7 @@ export default function Projects() {
           </section>
         </div>
 
-        <div className="group/card md:hover:bg-blue-100 mx-10 md:mx-4 md:p-4 rounded-2xl flex flex-row items-start my-10">
+        <div className="group/card dark:md:hover:bg-gray-700 md:hover:bg-blue-100 mx-10 md:mx-4 md:p-4 rounded-2xl flex flex-row items-start my-10">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               Fingerprint Doorlock
@@ -154,10 +154,10 @@ export default function Projects() {
               servo.
             </p>
             <div className="flex flex-row">
-              <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
                 C++
               </h3>
-              <h3 className="max-w-min font-bold bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
                 Arduino
               </h3>
             </div>
@@ -174,7 +174,7 @@ export default function Projects() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 aria-hidden="true"
-                className="w-5 h-5 ml-0.5 mb-0.5 self-end group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:fill-blue-500"
+                className="w-5 h-5 ml-0.5 mb-0.5 self-end group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:fill-blue-500 dark:fill-white"
               >
                 <path
                   fill-rule="evenodd"
@@ -186,7 +186,7 @@ export default function Projects() {
           </section>
         </div>
 
-        <div className="group/card md:hover:bg-blue-100 rounded-2xl flex flex-row items-start my-10 mx-10 md:mx-4 md:p-4">
+        <div className="group/card dark:md:hover:bg-gray-700 md:hover:bg-blue-100 rounded-2xl flex flex-row items-start my-10 mx-10 md:mx-4 md:p-4">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               Moped Speedometer
@@ -197,10 +197,10 @@ export default function Projects() {
               Tracks speed, trip distance and average gas consumption.
             </p>
             <div className="flex flex-row">
-              <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
                 C++
               </h3>
-              <h3 className="max-w-min font-bold bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
                 Arduino
               </h3>
             </div>
@@ -217,7 +217,7 @@ export default function Projects() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 aria-hidden="true"
-                className="w-5 h-5 ml-0.5 mb-0.5 self-end group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:fill-blue-500"
+                className="w-5 h-5 ml-0.5 mb-0.5 self-end group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:fill-blue-500 dark:fill-white"
               >
                 <path
                   fill-rule="evenodd"
@@ -229,7 +229,7 @@ export default function Projects() {
           </section>
         </div>
 
-        <div className="group/card md:hover:bg-blue-100 rounded-2xl flex flex-row items-start my-10 mx-10 md:mx-4 md:p-4">
+        <div className="group/card dark:md:hover:bg-gray-700 md:hover:bg-blue-100 rounded-2xl flex flex-row items-start my-10 mx-10 md:mx-4 md:p-4">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               Sofle Choc{" "}
@@ -239,13 +239,13 @@ export default function Projects() {
               Arduino micro and flashed with QMK Firmware.
             </p>
             <div className="flex flex-row">
-              <h3 className="max-w-min font-bold bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
                 C++
               </h3>
-              <h3 className="max-w-min font-bold bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
                 Arduino
               </h3>
-              <h3 className="max-w-min font-bold bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 m-1 px-2 py-0.5 rounded-2xl">
                 QMK
               </h3>
             </div>
@@ -259,7 +259,7 @@ export default function Projects() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 aria-hidden="true"
-                className="w-5 h-5 ml-0.5 mb-0.5 self-end group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:fill-blue-500"
+                className="w-5 h-5 ml-0.5 mb-0.5 self-end group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:fill-blue-500 dark:fill-white"
               >
                 <path
                   fill-rule="evenodd"
