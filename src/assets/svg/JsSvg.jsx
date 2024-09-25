@@ -10,7 +10,7 @@ export default function JsSvg() {
       viewBox="0 0 512 512"
       enable-background="new 0 0 512 512"
       xml:space="preserve"
-	  className="w-8 h-min md:w-12 md:h-12 mx-4"
+      className="w-8 h-min md:w-12 md:h-12 mx-4 dark:fill-white"
     >
       <g id="5151e0c8492e5103c096af88a51e75c7">
         <path

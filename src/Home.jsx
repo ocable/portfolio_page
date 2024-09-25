@@ -574,9 +574,11 @@ function Home() {
           <Element name="landing">
             <section
               className="flex flex-col justify-center items-center h-full"
-              style={{ height: "100vh", backgroundColor: "white" }}
+              style={{ height: "100vh" }}
             >
-              <h1 className="text-3xl font-bold md:text-5xl m-4">Hi, I'm Orion</h1>
+              <h1 className="text-3xl font-bold md:text-5xl m-4">
+                Hi, I'm Orion
+              </h1>
               <h2 className="text-xl font-bold m-4 md:text-3xl">
                 I like to [code, make] things
               </h2>
@@ -607,11 +609,10 @@ function Home() {
         </div>
 
         <Navbar />
-        
 
-        <section>
+        <section className="">
           <Element name="about">
-            <section style={{ height: "auto", backgroundColor: "white" }}>
+            <section style={{ height: "auto" }}>
               <About />
             </section>
           </Element>
@@ -619,17 +620,14 @@ function Home() {
           <Element name="projects">
             <section
               className="h-full flex flex-col items-center"
-              style={{ height: "auto", backgroundColor: "white" }}
+              style={{ height: "auto" }}
             >
               <Projects />
             </section>
           </Element>
 
           <Element name="contact">
-            <section
-              className="h-full"
-              style={{ height: "auto", backgroundColor: "white" }}
-            >
+            <section className="h-full" style={{ height: "auto" }}>
               <Contact />
             </section>
           </Element>
