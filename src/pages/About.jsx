@@ -1,5 +1,5 @@
 import React from "react";
-import headshot from "../assets/orion_headshot.jpg";
+import headshot from "../assets/headshot.jpg";
 import JsSvg from "../assets/svg/JsSvg.jsx";
 import ReactSvg from "../assets/svg/React.jsx";
 import NodeSvg from "../assets/svg/NodeSvg.jsx";
