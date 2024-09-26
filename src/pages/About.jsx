@@ -19,7 +19,7 @@ export default function About() {
           className="w-1/2 md:w-1/4 rounded-full md:mr-14"
         />
         <p className="text-md my-8 md:mx-4 md:text-xl/10 text-center leading-10">
-          I am a software engineer with a curiousity for how things work. I am
+          I am a software engineer with a curiosity for how things work. I am
           skilled in technologies like JavaScript, React, Redux, Node.js,
           Express, and PostgreSQL. When I'm not at my computer, you can find me
           playing Ultimate frisbee on the US national team, racing mountain
