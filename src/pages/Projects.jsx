@@ -63,21 +63,24 @@ export default function Projects() {
         <div className="group/card dark:md:hover:bg-gray-700 md:hover:bg-blue-100 mx-10 md:mx-4 md:p-4 rounded-2xl flex flex-row items-start my-10">
           <section className=" flex flex-col">
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
-              Buoy Data Visualizer
+              Surf Forecast API
             </h2>
             <p className="my-2">
-              A Python program that visualizes raw spectral buoy data from the
-              NBDC. Plots and uses PSD data to calculate significant wave height
-              and period. A breakdown of each swell component is also provided.
+              A FLask Rest API that has raw spectral buoy data from the NBDC. I
+              will use this to create a fullstack web app showing surf forecast.
+              A breakdown of each swell component is also provided.
             </p>
             <div className="flex flex-row">
               <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
                 Python
               </h3>
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
+                Flask
+              </h3>
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="https://github.com/ocable/wave_math" target="_blank">
+                <a href="https://github.com/ocable/wave_api" target="_blank">
                   View on GitHub
                 </a>
               </h4>
