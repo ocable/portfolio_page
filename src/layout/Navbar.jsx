@@ -44,7 +44,17 @@ function Navbar() {
             duration={1000}
             className="md:hover:bg-blue-100"
           >
-            Projects
+            Coding
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="building"
+            smooth={true}
+            duration={1000}
+            className="md:hover:bg-blue-100"
+          >
+            Building
           </Link>
         </li>
         <li>
