@@ -57,9 +57,7 @@ export default function Building() {
             <div className="flex flex-col sm:flex-row">
               <section className="group/link flex flex-row text-nowrap w-min mr-4">
                 <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                  <a href="./Mobility" target="_blank">
-                    See more
-                  </a>
+                  <a href="/mobility">See more</a>
                 </h4>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +81,7 @@ export default function Building() {
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               Basement Renovation
             </h2>
-            <p className="my-2">
+            <p className="my-2 mr-10">
               Finished basement with two bedrooms and living room. Constructed
               subfloor, framed walls, installed drywall and painted.
             </p>
@@ -94,9 +92,7 @@ export default function Building() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="./basement" target="_blank">
-                  See more
-                </a>
+                <a href="./basement">See more</a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -129,9 +125,7 @@ export default function Building() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="./record" target="_blank">
-                  See more
-                </a>
+                <a href="./record">See more</a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -165,9 +159,7 @@ export default function Building() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="./minibike" target="_blank">
-                  See more
-                </a>
+                <a href="./minibike">See more</a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -204,9 +196,7 @@ export default function Building() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="" target="_blank">
-                  See more
-                </a>
+                <a href="">See more</a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
