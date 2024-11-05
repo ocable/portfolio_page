@@ -16,6 +16,7 @@ import {
 import Navbar from "./layout/Navbar";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Building from "./pages/Building";
 import Contact from "./pages/Contact";
 
 // Scroll callback function
@@ -623,6 +624,15 @@ function Home() {
               style={{ height: "auto" }}
             >
               <Projects />
+            </section>
+          </Element>
+
+          <Element name="building">
+            <section
+              className="h-full flex flex-col items-center"
+              style={{ height: "auto" }}
+            >
+              <Building />
             </section>
           </Element>
 
