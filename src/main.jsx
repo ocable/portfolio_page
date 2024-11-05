@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       { path: "/basement", element: <Basement /> },
       { path: "/record", element: <Record /> },
       { path: "/minibike", element: <MiniBike /> },
-      { path: "/shower", element: <MiniBike /> },
+      { path: "/shower", element: <Shower /> },
     ],
   },
 ]);
