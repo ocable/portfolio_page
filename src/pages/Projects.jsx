@@ -78,7 +78,7 @@ export default function Projects() {
                 React
               </h3>
             </div>
-            <div className="flex flex-row">
+            <div className="flex flex-col sm:flex-row">
               <section className="group/link flex flex-row text-nowrap w-min mr-4">
                 <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
                   <a href="https://github.com/ocable/wave_math" target="_blank">
