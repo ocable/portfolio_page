@@ -65,7 +65,7 @@ export default function Projects() {
             <h2 className="text-3xl font-bold text-nowrap mr-10 group-hover/card:text-blue-500">
               Surf Forecast Web App
             </h2>
-            <p className="my-2">
+            <p className="my-2 mr-10">
               A Python backend that pulls raw spectral buoy data from the NBDC.
               React frontend displays live buoy readings as well as forecasted
               wave data from the GFS model.
