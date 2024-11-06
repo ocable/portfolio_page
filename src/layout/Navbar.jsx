@@ -12,7 +12,7 @@ function Navbar() {
   const ref = useRef(null);
 
   return (
-    <div className="flex flex-row navbar bg-base-100 sticky top-0">
+    <div className="flex flex-row justify-between navbar bg-base-100 sticky top-0">
       <div className="navbar-start">
         <a className="text-sm text-nowrap md:text-4xl ml-2 md:ml-12 font-bold">
           Orion Cable
