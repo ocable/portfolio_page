@@ -196,7 +196,7 @@ export default function Building() {
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
               <h4 className="text-xl font-bold mt-2 hover:text-blue-500">
-                <a href="">See more</a>
+                <a href="/shower">See more</a>
               </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
