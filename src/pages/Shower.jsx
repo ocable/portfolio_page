@@ -27,11 +27,11 @@ export default function Shower() {
         <img src={sho5} className="w-10/12 my-4"></img>
 
         <p className="font-roboto text-md md:text-xl font-medium w-4/5 mt-10 mb-8">
-          • 125cc pit bike motor <br />
-          • 4-speed manual transmission
+          • Cedar <br />
+          • Hot and Cold water
           <br />
-          • Paddle shifters
-          <br />• Live rear axle
+          • Custom shower pan and drain
+          <br />• Custom copper piping
         </p>
         <img src={sho1} className="w-10/12 my-4"></img>
         <img src={sho2} className="w-10/12 my-4"></img>
