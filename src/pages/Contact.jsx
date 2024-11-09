@@ -59,7 +59,7 @@ export default function Contact() {
         </a>
 
         <a
-          href="https://drive.google.com/file/d/1qy6ENb7w2FoZXWRzpUIVCd33cifLWFYn/view?usp=sharing"
+          href="https://drive.google.com/file/d/1ADpfwujQiKE0r9qYAw6ivpNVLm_U7JLX/view?usp=sharing"
           target="_blank"
         >
           <div className="flex flex-col items-center">
