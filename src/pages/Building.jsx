@@ -11,12 +11,15 @@ export default function Building() {
               Van Conversion
             </h2>
             <p className="my-2">
-              Built out interior of my 2015 Ford Transit Connect. Equipt with a
-              solar panel, inverter, sink, vent and deisel heater.
+              Built out interior of my 2015 Ford Transit Connect. Equipped with
+              a solar panel, inverter, sink, vent and diesel heater.
             </p>
             <div className="flex flex-row">
               <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
                 Carpentry
+              </h3>
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
+                Electrical
               </h3>
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
@@ -53,6 +56,9 @@ export default function Building() {
               <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
                 Welding
               </h3>
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
+                Electrical
+              </h3>
             </div>
             <div className="flex flex-col sm:flex-row">
               <section className="group/link flex flex-row text-nowrap w-min mr-4">
@@ -88,6 +94,12 @@ export default function Building() {
             <div className="flex flex-row">
               <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
                 Carpentry
+              </h3>
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
+                Framing
+              </h3>
+              <h3 className="max-w-min font-bold dark:bg-gray-700 bg-blue-100 ml-0 m-1 px-2 py-0.5 rounded-2xl">
+                Drywall
               </h3>
             </div>
             <section className="group/link flex flex-row text-nowrap w-min">
