@@ -1,31 +1,33 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Navigate, useParams } from "react-router-dom";
 
-import Root from "./layout/Root.jsx";
-import Home from "./Home.jsx";
-import Van from "./pages/Van.jsx";
-import Mobility from "./pages/Mobility.jsx";
-import Basement from "./pages/Basement.jsx";
-import Record from "./pages/Record.jsx";
-import MiniBike from "./pages/MiniBike.jsx";
-import Shower from "./pages/Shower.jsx";
-import Project_List from "./pages/Project_list.jsx";
+function WorksRedirect() {
+  const { slug } = useParams()
+  return <Navigate to={`/works/${slug}`} replace />
+}
+
+import RootV2 from "./v2/layout/RootV2.jsx";
+import HomeV2 from "./v2/HomeV2.jsx";
+import WorkDetailV2 from "./v2/pages/WorkDetailV2.jsx";
+import BuildingPageV2 from "./v2/pages/BuildingPageV2.jsx";
+import CodingPageV2 from "./v2/pages/CodingPageV2.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <RootV2 />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/projects", element: <Project_List /> },
-      { path: "/van", element: <Van /> },
-      { path: "/mobility", element: <Mobility /> },
-      { path: "/basement", element: <Basement /> },
-      { path: "/record", element: <Record /> },
-      { path: "/minibike", element: <MiniBike /> },
-      { path: "/shower", element: <Shower /> },
+      { index: true, element: <HomeV2 /> },
+      { path: "works/:slug", element: <WorkDetailV2 /> },
+      { path: "building", element: <BuildingPageV2 /> },
+      { path: "coding", element: <CodingPageV2 /> },
+      // Legacy redirects
+      { path: "v2", element: <Navigate to="/" replace /> },
+      { path: "v2/building", element: <Navigate to="/building" replace /> },
+      { path: "v2/coding", element: <Navigate to="/coding" replace /> },
+      { path: "v2/works/:slug", element: <WorksRedirect /> },
     ],
   },
 ]);
