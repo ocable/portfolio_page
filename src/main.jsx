@@ -11,6 +11,9 @@ import Record from "./pages/Record.jsx";
 import MiniBike from "./pages/MiniBike.jsx";
 import Shower from "./pages/Shower.jsx";
 import Project_List from "./pages/Project_list.jsx";
+import RootV2 from "./v2/layout/RootV2.jsx";
+import HomeV2 from "./v2/HomeV2.jsx";
+import WorkDetailV2 from "./v2/pages/WorkDetailV2.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -26,6 +29,14 @@ const router = createBrowserRouter([
       { path: "/record", element: <Record /> },
       { path: "/minibike", element: <MiniBike /> },
       { path: "/shower", element: <Shower /> },
+    ],
+  },
+  {
+    path: "/v2",
+    element: <RootV2 />,
+    children: [
+      { index: true, element: <HomeV2 /> },
+      { path: "works/:slug", element: <WorkDetailV2 /> },
     ],
   },
 ]);
