@@ -30,7 +30,7 @@ function ProjectRow({ work, index, devMode, dragState, onDragStart, onDragOver, 
         <div className="absolute top-0 left-0 right-0 h-0.5 bg-[#111] z-20" />
       )}
 
-      <Link to={`/v2/works/${work.slug}`} className="group block">
+      <Link to={`/works/${work.slug}`} className="group block">
         {/* Image — full width */}
         <div
           ref={imgRef}

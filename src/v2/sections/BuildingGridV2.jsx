@@ -13,7 +13,7 @@ export default function BuildingGridV2() {
           {buildingWorks.map((work) => (
             <Link
               key={work.slug}
-              to={`/v2/works/${work.slug}`}
+              to={`/works/${work.slug}`}
               className="group block"
             >
               {/* Image / placeholder */}

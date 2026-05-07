@@ -7,8 +7,8 @@ import { Link as RouterLink, useLocation } from "react-router-dom"
 const NAV_LINKS = [
   { label: "Home",     type: "scroll", to: "hero" },
   { label: "About",    type: "scroll", to: "about" },
-  { label: "Building", type: "page",   to: "/v2/building" },
-  { label: "Coding",   type: "page",   to: "/v2/coding" },
+  { label: "Building", type: "page",   to: "/building" },
+  { label: "Coding",   type: "page",   to: "/coding" },
   { label: "Contact",  type: "scroll", to: "contact" },
 ]
 
@@ -16,7 +16,7 @@ export default function NavbarV2() {
   const [visible, setVisible] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
-  const isHomePage = location.pathname === "/v2" || location.pathname === "/v2/"
+  const isHomePage = location.pathname === "/" || location.pathname === ""
 
   useEffect(() => {
     const t = setTimeout(() => setVisible(true), 120)
@@ -35,7 +35,7 @@ export default function NavbarV2() {
       <div className="w-full px-6 md:px-12 flex items-center justify-between h-16">
         {/* Logo — always a router link back to home */}
         <RouterLink
-          to="/v2"
+          to="/"
           className="font-display text-base font-bold tracking-tight hover:opacity-50 transition-opacity duration-200"
         >
           Orion Cable
@@ -60,7 +60,7 @@ export default function NavbarV2() {
                   {label}
                 </ScrollLink>
               ) : (
-                <RouterLink to={`/v2#${to}`} className={linkClass}>
+                <RouterLink to={`/#${to}`} className={linkClass}>
                   {label}
                 </RouterLink>
               )}
@@ -101,7 +101,7 @@ export default function NavbarV2() {
                   {label}
                 </ScrollLink>
               ) : (
-                <RouterLink to={`/v2#${to}`} onClick={() => setMenuOpen(false)} className={mobileLinkClass}>
+                <RouterLink to={`/#${to}`} onClick={() => setMenuOpen(false)} className={mobileLinkClass}>
                   {label}
                 </RouterLink>
               )}

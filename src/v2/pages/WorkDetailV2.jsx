@@ -119,7 +119,7 @@ function OtherWorks({ current }) {
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
           {others.map((work) => (
-            <Link key={work.slug} to={`/v2/works/${work.slug}`} className="group block">
+            <Link key={work.slug} to={`/works/${work.slug}`} className="group block">
               <div className="aspect-square bg-[#EBEBEB] overflow-hidden mb-2">
                 {work.coverImage ? (
                   <img
@@ -157,7 +157,7 @@ export default function WorkDetailV2() {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center pt-16 gap-4">
         <p className="font-display text-sm text-[#6B6B6B] uppercase tracking-widest">Project not found</p>
-        <Link to="/v2" className="text-xs underline underline-offset-4 hover:opacity-50 transition-opacity">
+        <Link to="/" className="text-xs underline underline-offset-4 hover:opacity-50 transition-opacity">
           Back to home
         </Link>
       </div>

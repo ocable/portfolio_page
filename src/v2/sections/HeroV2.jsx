@@ -16,7 +16,7 @@ export default function HeroV2({ skipAnimation = false }) {
 
       <div className={`${skipAnimation ? "" : "animate-fade-up-delay"} flex items-center gap-10`}>
         <RouterLink
-          to="/v2/building"
+          to="/building"
           className="group flex flex-col gap-1.5"
         >
           <span className="inline-flex items-center gap-2 text-sm font-display font-semibold tracking-widest uppercase text-[#111111]">
@@ -26,7 +26,7 @@ export default function HeroV2({ skipAnimation = false }) {
           <span className="block h-[1.5px] bg-[#111111] w-0 group-hover:w-full transition-all duration-300 ease-out" />
         </RouterLink>
         <RouterLink
-          to="/v2/coding"
+          to="/coding"
           className="group flex flex-col gap-1.5"
         >
           <span className="inline-flex items-center gap-2 text-sm font-display font-semibold tracking-widest uppercase text-[#111111]">
