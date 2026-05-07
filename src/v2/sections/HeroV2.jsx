@@ -1,33 +1,40 @@
-import { Link } from "react-scroll"
+import { Link as RouterLink } from "react-router-dom"
 
-export default function HeroV2() {
+export default function HeroV2({ skipAnimation = false }) {
   return (
     <section
       id="hero"
       className="min-h-screen flex flex-col justify-center max-w-5xl mx-auto px-6 md:px-12 pt-16"
     >
-      {/* Wipe-in reveal on the name */}
-      <h1 className="font-display text-[clamp(3rem,10vw,7rem)] font-extrabold tracking-tight leading-none mb-4 animate-wipe-in overflow-hidden">
+      <h1 className={`font-display text-[clamp(3rem,10vw,7rem)] font-extrabold tracking-tight leading-none mb-4 overflow-hidden ${skipAnimation ? "" : "animate-wipe-in"}`}>
         Orion Cable
       </h1>
 
-      <p className="text-lg md:text-xl text-[#6B6B6B] mb-14 max-w-md animate-wipe-in-delay">
+      <p className={`text-lg md:text-xl text-[#6B6B6B] mb-14 max-w-md ${skipAnimation ? "" : "animate-wipe-in-delay"}`}>
         Software engineer. I like to build things —<br className="hidden md:block" /> in code and with my hands.
       </p>
 
-      <div className="animate-fade-up-delay flex items-center gap-6">
-        <Link
-          to="about"
-          smooth
-          duration={800}
-          offset={-64}
-          className="inline-flex items-center gap-2 text-sm font-medium border border-[#111111] px-6 py-3 cursor-pointer hover:bg-[#111111] hover:text-[#FAFAFA] transition-colors duration-200"
+      <div className={`${skipAnimation ? "" : "animate-fade-up-delay"} flex items-center gap-10`}>
+        <RouterLink
+          to="/v2/building"
+          className="group flex flex-col gap-1.5"
         >
-          View my work
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M12 4v16M12 20l-6-6M12 20l6-6" />
-          </svg>
-        </Link>
+          <span className="inline-flex items-center gap-2 text-sm font-display font-semibold tracking-widest uppercase text-[#111111]">
+            Building
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </span>
+          <span className="block h-[1.5px] bg-[#111111] w-0 group-hover:w-full transition-all duration-300 ease-out" />
+        </RouterLink>
+        <RouterLink
+          to="/v2/coding"
+          className="group flex flex-col gap-1.5"
+        >
+          <span className="inline-flex items-center gap-2 text-sm font-display font-semibold tracking-widest uppercase text-[#111111]">
+            Coding
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </span>
+          <span className="block h-[1.5px] bg-[#111111] w-0 group-hover:w-full transition-all duration-300 ease-out" />
+        </RouterLink>
       </div>
 
       {/* Subtle index marker */}

@@ -1,25 +1,30 @@
 import { useState, useEffect } from "react"
-import { Link } from "react-scroll"
-import { useLocation } from "react-router-dom"
+import { Link as ScrollLink } from "react-scroll"
+import { Link as RouterLink, useLocation } from "react-router-dom"
 
+// scroll: uses react-scroll on home page
+// href: always a router/page link
 const NAV_LINKS = [
-  { label: "Home", to: "hero" },
-  { label: "About", to: "about" },
-  { label: "Building", to: "building" },
-  { label: "Coding", to: "coding" },
-  { label: "Contact", to: "contact" },
+  { label: "Home",     type: "scroll", to: "hero" },
+  { label: "About",    type: "scroll", to: "about" },
+  { label: "Building", type: "page",   to: "/v2/building" },
+  { label: "Coding",   type: "page",   to: "/v2/coding" },
+  { label: "Contact",  type: "scroll", to: "contact" },
 ]
 
 export default function NavbarV2() {
   const [visible, setVisible] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
-  const isDetailPage = location.pathname.startsWith("/v2/works/")
+  const isHomePage = location.pathname === "/v2" || location.pathname === "/v2/"
 
   useEffect(() => {
     const t = setTimeout(() => setVisible(true), 120)
     return () => clearTimeout(t)
   }, [])
+
+  const linkClass = "text-sm font-medium text-[#6B6B6B] hover:text-[#111111] transition-colors duration-200 cursor-pointer"
+  const mobileLinkClass = "font-display text-lg font-semibold text-[#111111] hover:opacity-50 transition-opacity cursor-pointer"
 
   return (
     <nav
@@ -27,106 +32,78 @@ export default function NavbarV2() {
         visible ? "opacity-100" : "opacity-0"
       }`}
     >
-      <div className="max-w-5xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
-        {/* Logo */}
-        {isDetailPage ? (
-          <a
-            href="/v2"
-            className="font-display text-base font-bold tracking-tight hover:opacity-50 transition-opacity duration-200"
-          >
-            Orion Cable
-          </a>
-        ) : (
-          <Link
-            to="hero"
-            smooth
-            duration={800}
-            className="font-display text-base font-bold tracking-tight cursor-pointer hover:opacity-50 transition-opacity duration-200"
-          >
-            Orion Cable
-          </Link>
-        )}
+      <div className="w-full px-6 md:px-12 flex items-center justify-between h-16">
+        {/* Logo — always a router link back to home */}
+        <RouterLink
+          to="/v2"
+          className="font-display text-base font-bold tracking-tight hover:opacity-50 transition-opacity duration-200"
+        >
+          Orion Cable
+        </RouterLink>
 
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-8">
-          {NAV_LINKS.map(({ label, to }) =>
-            isDetailPage ? (
-              <li key={to}>
-                <a
-                  href={`/v2#${to}`}
-                  className="text-sm font-medium text-[#6B6B6B] hover:text-[#111111] transition-colors duration-200"
-                >
+          {NAV_LINKS.map(({ label, type, to }) => (
+            <li key={label}>
+              {type === "page" ? (
+                <RouterLink to={to} className={linkClass}>
                   {label}
-                </a>
-              </li>
-            ) : (
-              <li key={to}>
-                <Link
+                </RouterLink>
+              ) : isHomePage ? (
+                <ScrollLink
                   to={to}
                   smooth
                   duration={800}
                   offset={-64}
-                  className="text-sm font-medium text-[#6B6B6B] hover:text-[#111111] transition-colors duration-200 cursor-pointer"
+                  className={linkClass}
                 >
                   {label}
-                </Link>
-              </li>
-            )
-          )}
+                </ScrollLink>
+              ) : (
+                <RouterLink to={`/v2#${to}`} className={linkClass}>
+                  {label}
+                </RouterLink>
+              )}
+            </li>
+          ))}
         </ul>
 
-        {/* Mobile hamburger — three lines that animate to × */}
+        {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen((o) => !o)}
           className="md:hidden flex flex-col justify-center gap-[5px] w-8 h-8"
           aria-label="Toggle menu"
         >
-          <span
-            className={`block w-6 h-[1.5px] bg-[#111111] transition-all duration-300 origin-center ${
-              menuOpen ? "rotate-45 translate-y-[6.5px]" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-[1.5px] bg-[#111111] transition-opacity duration-300 ${
-              menuOpen ? "opacity-0" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-[1.5px] bg-[#111111] transition-all duration-300 origin-center ${
-              menuOpen ? "-rotate-45 -translate-y-[6.5px]" : ""
-            }`}
-          />
+          <span className={`block w-6 h-[1.5px] bg-[#111111] transition-all duration-300 origin-center ${menuOpen ? "rotate-45 translate-y-[6.5px]" : ""}`} />
+          <span className={`block w-6 h-[1.5px] bg-[#111111] transition-opacity duration-300 ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-[1.5px] bg-[#111111] transition-all duration-300 origin-center ${menuOpen ? "-rotate-45 -translate-y-[6.5px]" : ""}`} />
         </button>
       </div>
 
       {/* Mobile menu drawer */}
-      <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          menuOpen ? "max-h-72 border-b border-[#E5E5E5]" : "max-h-0"
-        }`}
-      >
+      <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${menuOpen ? "max-h-72 border-b border-[#E5E5E5]" : "max-h-0"}`}>
         <ul className="px-6 py-4 flex flex-col gap-5">
-          {NAV_LINKS.map(({ label, to }) => (
-            <li key={to}>
-              {isDetailPage ? (
-                <a
-                  href={`/v2#${to}`}
-                  onClick={() => setMenuOpen(false)}
-                  className="font-display text-lg font-semibold text-[#111111] hover:opacity-50 transition-opacity"
-                >
+          {NAV_LINKS.map(({ label, type, to }) => (
+            <li key={label}>
+              {type === "page" ? (
+                <RouterLink to={to} onClick={() => setMenuOpen(false)} className={mobileLinkClass}>
                   {label}
-                </a>
-              ) : (
-                <Link
+                </RouterLink>
+              ) : isHomePage ? (
+                <ScrollLink
                   to={to}
                   smooth
                   duration={800}
                   offset={-64}
                   onClick={() => setMenuOpen(false)}
-                  className="font-display text-lg font-semibold text-[#111111] hover:opacity-50 transition-opacity cursor-pointer"
+                  className={mobileLinkClass}
                 >
                   {label}
-                </Link>
+                </ScrollLink>
+              ) : (
+                <RouterLink to={`/v2#${to}`} onClick={() => setMenuOpen(false)} className={mobileLinkClass}>
+                  {label}
+                </RouterLink>
               )}
             </li>
           ))}

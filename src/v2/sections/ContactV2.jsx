@@ -7,7 +7,7 @@ const LINKS = [
 
 export default function ContactV2() {
   return (
-    <section id="contact" className="py-24 md:py-32 border-t border-[#E5E5E5]">
+    <section id="contact" className="py-24 md:py-32">
       <div className="max-w-5xl mx-auto px-6 md:px-12">
         <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-[#6B6B6B] mb-12">
           Contact

@@ -14,6 +14,8 @@ import Project_List from "./pages/Project_list.jsx";
 import RootV2 from "./v2/layout/RootV2.jsx";
 import HomeV2 from "./v2/HomeV2.jsx";
 import WorkDetailV2 from "./v2/pages/WorkDetailV2.jsx";
+import BuildingPageV2 from "./v2/pages/BuildingPageV2.jsx";
+import CodingPageV2 from "./v2/pages/CodingPageV2.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -37,6 +39,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomeV2 /> },
       { path: "works/:slug", element: <WorkDetailV2 /> },
+      { path: "building", element: <BuildingPageV2 /> },
+      { path: "coding", element: <CodingPageV2 /> },
     ],
   },
 ]);
